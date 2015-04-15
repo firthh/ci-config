@@ -1,6 +1,6 @@
 ---
 - hosts: all
   sudo: yes
-  - tasks:
-      - pip: name=ansible
-      - shell: ansible-galaxy install ANXS.postgresql --ignore-errors --force
+  tasks:
+    - pip: name=ansible
+    - shell: ansible-galaxy install ANXS.postgresql --ignore-errors --force
